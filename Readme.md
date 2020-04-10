@@ -2,7 +2,7 @@
 
 2020/04/10　アライラク
 
-
+<br>
 
 ## 利用規約
 
@@ -10,14 +10,14 @@ https://github.com/AraiRacu/Licenceを参照してください。
 
 アライラク(以下「制作者」)の制作した素材(以下「本件素材」)を購入・利用する全てのお客様(以下「利用者」)は、上記URLに記載する利用規約(以下「本規約」)に同意したものといたします。
 
-
+<br>
 
 
 # 目次
 
 (B)のマークが付いているものはUnityのアップロードが初めての方向けです。
 
-
+<br>
 
 - [配布物内容](#配布物内容)
 - [アップロードまでの流れ(B)](#アップロードまでの流れ(B))
@@ -32,8 +32,8 @@ https://github.com/AraiRacu/Licenceを参照してください。
     - [漫符オブジェクト一覧](#漫符オブジェクト一覧)
 - [同梱プレハブ](#同梱プレハブ)
 - [VRM](#VRM)
-- [Dynamic Bone](#DynamicBone)
-  - [Dynamic Boneの設置場所](#DynamicBoneの設置場所)
+- [DynamicBone](#DynamicBone)
+  - [DynamicBoneの設置場所](#DynamicBoneの設置場所)
   - [ねじり打ち消し機構スカート](#ねじり打ち消し機構スカート)
 - [同梱3Dオブジェクト](#同梱3Dオブジェクト)
   - [Latte.fbx](#Latte.fbx)
@@ -45,7 +45,7 @@ https://github.com/AraiRacu/Licenceを参照してください。
   - [テクスチャ](#テクスチャ)
 - [その他](#その他)
 
-
+<br>
 
 # 配布物内容
 
@@ -81,7 +81,7 @@ Latte_v1_00.zip/
 
 　　└Latte_Manual
 
-
+<br>
 
 # アップロードまでの流れ(B)
 
@@ -91,7 +91,7 @@ Latte_v1_00.zip/
 
 ​			[https://tetoralog.com/vrc/vrc-avatar-upload.html](https://tetoralog.com/vrc/vrc-avatar-upload.html)
 
-
+<br>
 
 前提条件
 
@@ -107,7 +107,7 @@ Latte_v1_00.zip/
 
 - VRChatトラストシステムによるアバターアップロードの解禁
 
-
+<br>
 
 #### 1. Unityを起動し、新規プロジェクトを作成します
 
@@ -117,13 +117,13 @@ Latte_v1_00.zip/
 
       <img src="Image/Intro/A.png" width="600">
 
-      
+      <br>
 
       <img src="Image/Intro/B.png" width="600">
 
    2. しばらくするとプロジェクトが作成され、Unityの画面が表示されます。
 
-      
+      <br>
 
 #### 2. Unityにパッケージをインポートします
 
@@ -169,7 +169,7 @@ Latte_v1_00.zip/
 
    <img src="Image/Intro/J.png" width="300">
 
-
+<br>
 
 # シェイプキー
 
@@ -177,7 +177,7 @@ Latte_v1_00.zip/
 
 デフォルトの表情から付属している追加の表情へ変更する場合、以下の手順で可能です。
 
-
+<br>
 
 1. 変更するシェイプキーのバックアップをCtrl+Dで取ります。プレハブで使用しているシェイプキーは**Latte/Animation/Interference/ShapeKey** に入っています。バックアップしたアニメーションファイルの名前を**\~\_Backup** など適当な名前に変えておくとわかりやすいです。
 
@@ -203,17 +203,17 @@ Latte_v1_00.zip/
 
 7. この状態でアップロードすると実装されます。
 
-
+<br>
 
 ## シェイプキー干渉対策
 
 アニメーションオーバーライドの表情とリップシンクが干渉し、表情が破綻することを防ぐために、表情を表示中はリップシンクを行わない仕組みをureishi様([@aivrc](https://twitter.com/aivrc))の方式を導入しました。
 
-
+<br>
 
 このため、頭部のメッシュの親子構造がfbxファイルの状態から変更しています。これに伴い、表情アニメーションのパスも一般的なものと異なり、**LipSync/Body** となっています。
 
-
+<br>
 
 以上から、表情アニメーションは2種類のものを用意しています。
 
@@ -221,7 +221,7 @@ Latte_v1_00.zip/
 
 **Latte/Animation/Interference** ：シェイプキー干渉対策用に作成されたアニメーション群。プレハブ等にはここのアニメーションを使用しています。
 
-
+<br>
 
 ### シェイプキー干渉対策の実装方法
 
@@ -233,7 +233,7 @@ Latte_v1_00.zip/
 
    <img src="Image/InterAnim/B.png" width="1000">
 
-   
+   <br>
 
 ### 干渉対策用の表情アニメーションの作成
 
@@ -247,13 +247,13 @@ Latte_v1_00.zip/
 
 3. このアニメーションファイルを通常通りアニメーションオーバーライドにアタッチします。
 
-
+<br>
 
 参考：表情・リップシンク・まばたきの干渉対策 [VRChat] - Package Shop @aivrc
 
 ​				[https://booth.pm/ja/items/1532584](https://booth.pm/ja/items/1532584)
 
-
+<br>
 
 ## Idelアニメーションについて
 
@@ -269,19 +269,19 @@ Latte_v1_00.zip/
 
 <img src="Image/MainShape.png" width="600">
 
-
+<br>
 
 追加でセットアップ済みのアニメーションは以下のとおりです。
 
 <img src="Image/AddShape.png" width="700">
 
-
+<br>
 
 手の表情も以下のような設定しています。
 
 <img src="Image/Finger.png" width="700">
 
-
+<br>
 
 ## 漫符オブジェクト
 
@@ -315,7 +315,7 @@ Latte_v1_00.zip/
 
 6. 以上で、漫符の導入は完了します。
 
-   
+   <br>
 
 ### 漫符アニメーションの設定方法
 
@@ -323,13 +323,13 @@ Latte_v1_00.zip/
 - 魂の表示するアニメーションは同フォルダ内**GhostOn_InPath** に含まれているため、コピー＆ペーストするだけで実装できます。
 - **Latte/Animation/Interference** or **Normal/Utility**  内の**ShapeKeyAll** には漫符オブジェクトを含めたすべてのシェイプキーがあります。
 
-
+<br>
 
 ### 漫符オブジェクト一覧
 
 <img src="Image/Manpu.png" width="700">
 
-
+<br>
 
 # 同梱プレハブ
 
@@ -358,7 +358,7 @@ Latte_v1_00.zip/
   - DB搭載
   - デフォルトで魂は収納状態
 
-
+<br>
 
 # VRM
 
@@ -368,11 +368,11 @@ Latte_v1_00.zip/
 
 ポリゴン数が32000以上であるため、clusterには制限によりアップロードができないです。
 
+<br>
 
+# DynamicBone
 
-# Dynamic Bone
-
-## Dynamic Boneの設置場所
+## DynamicBoneの設置場所
 
 スカート以外のDynamicBoneは以下のボーンに設置しています。
 
@@ -392,7 +392,7 @@ Latte_v1_00.zip/
   - Ghost1
   - ManpuDB
 
-
+<br>
 
 ## ねじり打ち消し機構スカート
 
@@ -400,13 +400,13 @@ Latte_v1_00.zip/
 
 さらに、これを実装するためにほけ様([@hoke946](https://twitter.com/hoke946))のSkirtSupporterにより、実装しています。
 
-
+<br>
 
 当機構を実装しているプレハブのスカートはfbxファイルの親子構造と異なっています。
 
 そのため、配布されているUnityのコンポーネントコピーツールなどを使用する場合、うまくコピーされないことがあるため、注意してください。
 
-
+<br>
 
 機構な原理やツールの詳細は以下のリンクを参照してください。
 
@@ -418,7 +418,7 @@ Latte_v1_00.zip/
 
 　　　　[https://sites.google.com/view/skirtsup](https://sites.google.com/view/skirtsup)
 
-
+<br>
 
 # 同梱3Dオブジェクト
 
@@ -456,7 +456,7 @@ Humanoidの設定画面において、以下の画像のように**Reset** を�
 
 前髪のボーンが自動で顎のボーンになってしまっている場所も消しておいてください
 
-
+<br>
 
 ## Manpu.fbx
 
@@ -468,11 +468,11 @@ Humanoidの設定画面において、以下の画像のように**Reset** を�
   
   Manpu
 
-
+<br>
 
 漫符オブジェクトの詳細は[ここ](##漫符オブジェクト)を参照してください。
 
-
+<br>
 
 
 # マテリアルおよびテクスチャ
@@ -485,7 +485,7 @@ Humanoidの設定画面において、以下の画像のように**Reset** を�
 
 **簡易版マテリアル** ：メインテクスチャ1枚のみのマテリアル、色改変には1枚のテクスチャのみを用意する。色改変が容易
 
-
+<br>
 
 #### 通常版マテリアル
 
@@ -493,7 +493,7 @@ Humanoidの設定画面において、以下の画像のように**Reset** を�
 - **LatteHair** ：髪の毛
 - **LatteOpacity** ：透過オブジェクト
 
-
+<br>
 
 貫通を防ぐため、素体および衣装の一部をCutOffを用いて不可視化しています。
 
@@ -501,7 +501,7 @@ Humanoidの設定画面において、以下の画像のように**Reset** を�
 
 <img src="Image/Texture.png" width="500">
 
-
+<br>
 
 #### 簡易版マテリアル
 
@@ -510,19 +510,19 @@ Humanoidの設定画面において、以下の画像のように**Reset** を�
 - **LatteHair_Simple** ：髪の毛
 - **LatteOpacity_Simple** ：透過オブジェクト
 
-
+<br>
 
 簡易版マテリアルも同様に、貫通を防ぐため、素体および衣装の一部をCutOffを用いて不可視化しています。
 
 衣装を消すなどの改変を行う際には**LatteCos_Simple** および**LatteSkin_Simple** 内の**ClippingMask** のテクスチャを消すことで表示されるようになります。
 
-
+<br>
 
 #### 漫符オブジェクト用
 
 - **Manpu** 
 
-
+<br>
 
 ## UTS2.0
 
@@ -532,7 +532,7 @@ Humanoidの設定画面において、以下の画像のように**Reset** を�
 
 UCL2.0 [http://unity-chan.com/contents/guideline/](http://unity-chan.com/contents/guideline/)
 
-
+<br>
 
 ## テクスチャ
 
@@ -543,7 +543,7 @@ UCL2.0 [http://unity-chan.com/contents/guideline/](http://unity-chan.com/content
 
 - **Manpu.psd** ：漫符オブジェクト用のpsd
 
-
+<br>
 
 
 # その他
@@ -552,7 +552,7 @@ UCL2.0 [http://unity-chan.com/contents/guideline/](http://unity-chan.com/content
 
 アライラク (Twitter : @AraiRacu) 
 
-
+<br>
 
 # リリースノート
 
