@@ -32,8 +32,8 @@ https://github.com/AraiRacu/Licenceを参照してください。
     - [漫符オブジェクト一覧](#漫符オブジェクト一覧)
 - [同梱プレハブ](#同梱プレハブ)
 - [VRM](#VRM)
-- [Dynamic Bone](#Dynamic Bone)
-  - [Dynamic Boneの設置場所](#Dynamic Boneの設置場所)
+- [Dynamic Bone](#DynamicBone)
+  - [Dynamic Boneの設置場所](#DynamicBoneの設置場所)
   - [ねじり打ち消し機構スカート](#ねじり打ち消し機構スカート)
 - [同梱3Dオブジェクト](#同梱3Dオブジェクト)
   - [Latte.fbx](#Latte.fbx)
@@ -53,23 +53,23 @@ Latte_v1_00.zip/
 
 　　┝Model/
 
-　　│	┝Latte.fbx
+　　│　┝Latte.fbx
 
-　　│	┝Manpu.fbx
+　　│　┝Manpu.fbx
 
-　　│	└Tex/
+　　│　└Tex/
 
-　　│			┝Latte_Tex_Simple.psd
+　　│　　　┝Latte_Tex_Simple.psd
 
-　　│			┝Latte_Tex_Raw.psd
+　　│　　　┝Latte_Tex_Raw.psd
 
-　　│			└Manpu.psd
+　　│　　　└Manpu.psd
 
 　　┝VRM/
 
-​		│	┝LatteVRM.vrm
+　　│　┝LatteVRM.vrm
 
-​		│	└VRMSpring.json
+　　│　└VRMSpring.json
 
 　　┝Latte.unitypackage
 
@@ -79,7 +79,7 @@ Latte_v1_00.zip/
 
 　　┝Licence_GitHub
 
-​		└Latte_Manual
+　　└Latte_Manual
 
 
 
