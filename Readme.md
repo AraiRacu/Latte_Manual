@@ -19,31 +19,31 @@ https://github.com/AraiRacu/Licenceを参照してください。
 
 
 
-- [配布物内容](##配布物内容)
-- [アップロードまでの流れ(B)](#アップロードまでの流れ(B))
+- [配布物内容](# 配布物内容)
+- [アップロードまでの流れ(B)](# アップロードまでの流れ(B))
 - [シェイプキー](# シェイプキー)
-  - [アニメーションオーバーライドの設定(B)](##アニメーションオーバーライドの設定(B))
-  - [シェイプキー干渉対策](##シェイプキー干渉対策)
-  - [Idelアニメーションについて](###Idelアニメーションについて)
-  - [プリセット表情](##プリセット表情)
-  - [漫符オブジェクト](##漫符オブジェクト)
-    - [導入の方法](###導入の方法)
-    - [漫符アニメーションの設定方法](###漫符アニメーションの設定方法)
-    - [漫符オブジェクト一覧](###漫符オブジェクト一覧)
-- [同梱プレハブ](#同梱プレハブ)
-- [VRM](#VRM)
-- [Dynamic Bone](#Dynamic Bone)
-  - [Dynamic Boneの設置場所](Dynamic Boneの設置場所)
-  - [ねじり打ち消し機構スカート](##ねじり打ち消し機構スカート)
-- [同梱3Dオブジェクト](#同梱3Dオブジェクト)
-  - [Latte.fbx](##Latte.fbx)
-    - [Humanoid化](###Humanoid化)
-  - [Manpu.fbx](##Manpu.fbx)
-- [マテリアルおよびテクスチャ](#マテリアルおよびテクスチャ)
-  - [マテリアル](##マテリアル)
-  - [UTS2.0](##UTS2.0)
-  - [テクスチャ](##テクスチャ)
-- [その他](#その他)
+  - [アニメーションオーバーライドの設定(B)](## アニメーションオーバーライドの設定(B))
+  - [シェイプキー干渉対策](## シェイプキー干渉対策)
+  - [Idelアニメーションについて](### Idelアニメーションについて)
+  - [プリセット表情](## プリセット表情)
+  - [漫符オブジェクト](## 漫符オブジェクト)
+    - [導入の方法](### 導入の方法)
+    - [漫符アニメーションの設定方法](### 漫符アニメーションの設定方法)
+    - [漫符オブジェクト一覧](### 漫符オブジェクト一覧)
+- [同梱プレハブ](# 同梱プレハブ)
+- [VRM](# VRM)
+- [Dynamic Bone](# Dynamic Bone)
+  - [Dynamic Boneの設置場所](## Dynamic Boneの設置場所)
+  - [ねじり打ち消し機構スカート](## ねじり打ち消し機構スカート)
+- [同梱3Dオブジェクト](# 同梱3Dオブジェクト)
+  - [Latte.fbx](## Latte.fbx)
+    - [Humanoid化](### Humanoid化)
+  - [Manpu.fbx](## Manpu.fbx)
+- [マテリアルおよびテクスチャ](# マテリアルおよびテクスチャ)
+  - [マテリアル](## マテリアル)
+  - [UTS2.0](## UTS2.0)
+  - [テクスチャ](## テクスチャ)
+- [その他](# その他)
 
 
 
@@ -113,7 +113,7 @@ Latte_v1_00.zip/
 
    ※Unityアカウントでのログインが必要な場合があります。
 
-   1. Unityを起動し、プロジェクトを作成します。__Project name__に適当なプロジェクト名を入力し、__Template__を__3D__にします。入力後、__Create project__を押します。
+   1. Unityを起動し、プロジェクトを作成します。**Project name** に適当なプロジェクト名を入力し、**Template** を**3D** にします。入力後、**Create project** を押します。
 
       <img src="Image/Intro/A.png" width="600">
 
@@ -127,19 +127,19 @@ Latte_v1_00.zip/
 
 #### 2. Unityにパッケージをインポートします
 
-1. __VRCSDK2__をインポートします。エクスプローラーからUnityの__Project__タブの__Asset__フォルダにD&Dします。その後、Import画面が開くので、__Import__押してしばらくするとインポートされます。
+1. **VRCSDK2** をインポートします。エクスプローラーからUnityの**Project** タブの**Asset** フォルダにD&Dします。その後、Import画面が開くので、**Import** 押してしばらくするとインポートされます。
 
    <img src="Image/Intro/C.png" width="800">
 
-2. __DynamicBone__があれば、ここで、インポートします。__Asset Store__のタブの購入画面などから__Import__を押し、インポートします。
+2. **DynamicBone** があれば、ここで、インポートします。**Asset Store** のタブの購入画面などから**Import** を押し、インポートします。
 
    <img src="Image/Intro/D.png" width="300">
 
-3. 本製品の__Latte.unitypackage__をインポートします。操作は1.のVRCSDKをインポートとしたときと同様です。ユニティちゃんトゥーンシェーダー2.0.7.5は本パッケージに同梱しているので追加でインポートする必要はありません。
+3. 本製品の**Latte.unitypackage** をインポートします。操作は1.のVRCSDKをインポートとしたときと同様です。ユニティちゃんトゥーンシェーダー2.0.7.5は本パッケージに同梱しているので追加でインポートする必要はありません。
 
 #### 3.VRCSDKにログインします。
 
-1. 上のメニューバーの__VRChat SDK__->__Show Control Panel__でVRChatのコントロールパネルを開き、__Authentication__でログインをします。
+1. 上のメニューバーの**VRChat SDK** ->**Show Control Panel** でVRChatのコントロールパネルを開き、**Authentication** でログインをします。
 
    <img src="Image/Intro/E.png" width="400">
 
@@ -147,21 +147,21 @@ Latte_v1_00.zip/
 
 #### 4. Sceneにアバターを配置します。
 
-1. __Project__タブの__Latte/Prefab__からアップロードするプレハブを__Hierarchy__にD&Dします。プレハブの種類については[ここ](#同梱プレハブ)を参照してください。
+1. **Project** タブの**Latte/Prefab** からアップロードするプレハブを**Hierarchy** にD&Dします。プレハブの種類については[ここ](#同梱プレハブ)を参照してください。
 
    <img src="Image/Intro/G.png" width="700">
 
 #### 5.アバターをVRChatにアップロードします。
 
-1. シーンを保存します。ここで__Ctrl + S__で適当なシーン名で保存します。デフォルトでは__Asset/Scene__に__SampleScene__として置かれます。
+1. シーンを保存します。ここで**Ctrl + S** で適当なシーン名で保存します。デフォルトでは**Asset/Scene** に**SampleScene** として置かれます。
 
-2. ログインしたVRChatコントロールパネル内の__Builder__の右下の__Build & Publish__を押します。
+2. ログインしたVRChatコントロールパネル内の**Builder** の右下の**Build & Publish** を押します。
 
-   ※Scene内に複数のアバターがある場合は__Builder__でアップロードするアバターを選択してください。
+   ※Scene内に複数のアバターがある場合は**Builder** でアップロードするアバターを選択してください。
 
    <img src="Image/Intro/H.png" width="300">
 
-3. しばらくすると__Game__画面で入力画面が開くので、__Avatar Name__に適当な名前、__Sharing__の__Private__にチェック、__The above infomation~__(同意について)にチェックを入れ、__Upload__を押します。
+3. しばらくすると**Game** 画面で入力画面が開くので、**Avatar Name** に適当な名前、**Sharing** の**Private** にチェック、**The above infomation~** (同意について)にチェックを入れ、**Upload** を押します。
 
    <img src="Image/Intro/I.png" width="400">
 
@@ -179,11 +179,11 @@ Latte_v1_00.zip/
 
 
 
-1. 変更するシェイプキーのバックアップをCtrl+Dで取ります。プレハブで使用しているシェイプキーは__Latte/Animation/Interference/ShapeKey__に入っています。バックアップしたアニメーションファイルの名前を__~_Backup__など適当な名前に変えておくとわかりやすいです。
+1. 変更するシェイプキーのバックアップをCtrl+Dで取ります。プレハブで使用しているシェイプキーは**Latte/Animation/Interference/ShapeKey** に入っています。バックアップしたアニメーションファイルの名前を**~_Backup** など適当な名前に変えておくとわかりやすいです。
 
    <img src="Image/IntroAnim/A.png" width="300">
 
-2. 変えたい表情のアニメーションファイルを__Latte/Animation/Interference/Add__ 内から選択します。(指の表情は__Latte/Animation/Common__にあります)
+2. 変えたい表情のアニメーションファイルを**Latte/Animation/Interference/Add**  内から選択します。(指の表情は**Latte/Animation/Common** にあります)
 
 3. 2.でアニメーションファイルを選択した状態で、Animationタブを開き、つけたい表情のキーフレームを表示します。キーフレームをCtrl+Aですべて選択し、Ctrl+Cでコピーします。
 
@@ -193,7 +193,7 @@ Latte_v1_00.zip/
 
    <img src="Image/IntroAnim/C.png" width="700">
 
-5. 表情を変更したいアバターのアニメーションオーバーライドを表示します。(アバターについているAvatar Descriptor内、__Custom Standing/Sitting Anims__にアタッチされているものです。)
+5. 表情を変更したいアバターのアニメーションオーバーライドを表示します。(アバターについているAvatar Descriptor内、**Custom Standing/Sitting Anims** にアタッチされているものです。)
 
    <img src="Image/IntroAnim/D.png" width="700">
 
@@ -211,15 +211,15 @@ Latte_v1_00.zip/
 
 
 
-このため、頭部のメッシュの親子構造がfbxファイルの状態から変更しています。これに伴い、表情アニメーションのパスも一般的なものと異なり、__LipSync/Body__となっています。
+このため、頭部のメッシュの親子構造がfbxファイルの状態から変更しています。これに伴い、表情アニメーションのパスも一般的なものと異なり、**LipSync/Body** となっています。
 
 
 
 以上から、表情アニメーションは2種類のものを用意しています。
 
-__Latte/Animation/Normal__：シェイプキー干渉対策をしていない一般的な3Dモデルの直下に頭部メッシュがある場合のアニメーション群。シェイプキー干渉対策をしない場合に利用してください。
+**Latte/Animation/Normal** ：シェイプキー干渉対策をしていない一般的な3Dモデルの直下に頭部メッシュがある場合のアニメーション群。シェイプキー干渉対策をしない場合に利用してください。
 
-__Latte/Animation/Interference__：シェイプキー干渉対策用に作成されたアニメーション群。プレハブ等にはここのアニメーションを使用しています。
+**Latte/Animation/Interference** ：シェイプキー干渉対策用に作成されたアニメーション群。プレハブ等にはここのアニメーションを使用しています。
 
 
 
@@ -229,7 +229,7 @@ __Latte/Animation/Interference__：シェイプキー干渉対策用に作成さ
 
    <img src="Image/InterAnim/A.png" width="1000">
 
-2. LipSyncに__Animatior__コンポーネントを追加します。このコンポーネントは非アクティブにしておきます。__Latte/Animation/Interference/Animator__内のアニメーションコントローラの__LipSync__をAnimatorにアタッチします。
+2. LipSyncに**Animatior** コンポーネントを追加します。このコンポーネントは非アクティブにしておきます。**Latte/Animation/Interference/Animator** 内のアニメーションコントローラの**LipSync** をAnimatorにアタッチします。
 
    <img src="Image/InterAnim/B.png" width="1000">
 
@@ -237,9 +237,9 @@ __Latte/Animation/Interference__：シェイプキー干渉対策用に作成さ
 
 ### 干渉対策用の表情アニメーションの作成
 
-3. Bodyのシェイプキーのパスが__LipSync/Body__となった以外は通常通りに設定します。
+3. Bodyのシェイプキーのパスが**LipSync/Body** となった以外は通常通りに設定します。
 
-2. 表情を設定し終わったアニメーションに__Latte/Animation/Interference__内の__LipSyncAnimator__内の2フレーム分のアニメーションをコピー＆ペーストします。
+2. 表情を設定し終わったアニメーションに**Latte/Animation/Interference** 内の**LipSyncAnimator** 内の2フレーム分のアニメーションをコピー＆ペーストします。
 
    <img src="Image/InterAnim/C.png" width="700">
 
@@ -259,7 +259,7 @@ __Latte/Animation/Interference__：シェイプキー干渉対策用に作成さ
 
 本製品は立ち状態、座り状態時に設定した立ち姿、座り姿になるようにIdelアニメーションを付属しています。
 
-立ち状態、座り状態にそれぞれ、アニメーションオーバーライドが必要なことから、2種のアニメーションオーバーライドが__Latte/Animation/Interference/Animator__にあります。それぞれ__Idel__にアタッチされているアニメーションが異なっている以外は同じです。(Latte/Animation/Normal/Animatorについても同様です。)
+立ち状態、座り状態にそれぞれ、アニメーションオーバーライドが必要なことから、2種のアニメーションオーバーライドが**Latte/Animation/Interference/Animator** にあります。それぞれ**Idel** にアタッチされているアニメーションが異なっている以外は同じです。(Latte/Animation/Normal/Animatorについても同様です。)
 
 <img src="Image/Idel.png" width="400">
 
@@ -293,11 +293,11 @@ __Latte/Animation/Interference__：シェイプキー干渉対策用に作成さ
 
 ### 導入の方法
 
-1. Hierarchy上に__Latte/Prefab__内の漫符プレハブ(__Manpu__)をD&Dで起きます。このとき、プレハブのTransformが初期化されていない場合、Reset Transformで初期化してください。(※このときはHierarchy直下に置いてください)
+1. Hierarchy上に**Latte/Prefab** 内の漫符プレハブ(**Manpu** )をD&Dで起きます。このとき、プレハブのTransformが初期化されていない場合、Reset Transformで初期化してください。(※このときはHierarchy直下に置いてください)
 
    <img src="Image/ManpuIntro/A.png" width="700">
 
-2. このプレハブに__Latte/Animation/Common__内__GhostOn__のアニメーションを直接アタッチしてください。この状態で再生すると魂が表示されている状態になります。(Animatorが自動生成されます)
+2. このプレハブに**Latte/Animation/Common** 内**GhostOn** のアニメーションを直接アタッチしてください。この状態で再生すると魂が表示されている状態になります。(Animatorが自動生成されます)
 
    <img src="Image/ManpuIntro/B.png" width="500">
 
@@ -319,9 +319,9 @@ __Latte/Animation/Interference__：シェイプキー干渉対策用に作成さ
 
 ### 漫符アニメーションの設定方法
 
-- __Latte/Animation/Common__内にある__Manpu__に漫符シェイプキーのパスも同梱しているので、これをコピー＆ペーストで追加して設定してください。__Manpu__には魂を非表示するアニメーションが入っています。
-- 魂の表示するアニメーションは同フォルダ内__GhostOn_InPath__に含まれているため、コピー＆ペーストするだけで実装できます。
-- __Latte/Animation/Interference__ or __Normal/Utility__内の__ShapeKeyAll__には漫符オブジェクトを含めたすべてのシェイプキーがあります。
+- **Latte/Animation/Common** 内にある**Manpu** に漫符シェイプキーのパスも同梱しているので、これをコピー＆ペーストで追加して設定してください。**Manpu** には魂を非表示するアニメーションが入っています。
+- 魂の表示するアニメーションは同フォルダ内**GhostOn_InPath** に含まれているため、コピー＆ペーストするだけで実装できます。
+- **Latte/Animation/Interference** or **Normal/Utility**  内の**ShapeKeyAll** には漫符オブジェクトを含めたすべてのシェイプキーがあります。
 
 
 
@@ -335,24 +335,24 @@ __Latte/Animation/Interference__：シェイプキー干渉対策用に作成さ
 
 本製品には以下のプレハブを用意しています。それ以外については改変をお願いします。
 
-- __Latte__(デフォルト)
+- **Latte** (デフォルト)
 
   - (DB)ねじり打ち消し機構インサイドコライダー搭載スカート
   - (マテリアル)通常版マテリアル
 
-- __Latte_simple__(Simpleマテリアルの使用)
+- **Latte_simple** (Simpleマテリアルの使用)
 
   - (DB)ねじり打ち消し機構インサイドコライダー搭載スカート
   - (マテリアル)簡易版マテリアル
 
-- __Latte_DBOSC__(DynamicBoneのスカートのアウトサイドコライダーの使用)
+- **Latte_DBOSC** (DynamicBoneのスカートのアウトサイドコライダーの使用)
 
   - (DB)通常のアウトサイドコライダー搭載スカート
   - (マテリアル)通常版マテリアル
 
   インサイドコライダースカートに比べ、処理が軽量。ただし、足がスカートを貫通する。
 
-- __Manpu__
+- **Manpu** 
 
   - 漫符オブジェクトのみのプレハブ
   - DB搭載
@@ -412,11 +412,11 @@ __Latte/Animation/Interference__：シェイプキー干渉対策用に作成さ
 
 参考：【VRChat向け】ねじり打ち消し機構の解説書 - ヒヨ家の交易所 
 
-​				[https://booth.pm/ja/items/1819470](https://booth.pm/ja/items/1819470 )
+​               [https://booth.pm/ja/items/1819470](https://booth.pm/ja/items/1819470 )
 
 　　　SkirtSupporter説明書 - ほけ
 
-​				[https://sites.google.com/view/skirtsup](https://sites.google.com/view/skirtsup)
+​               [https://sites.google.com/view/skirtsup](https://sites.google.com/view/skirtsup)
 
 
 
@@ -450,7 +450,7 @@ __Latte/Animation/Interference__：シェイプキー干渉対策用に作成さ
 
 <img src="Image/Humanoid/A.png" width="700">
 
-Humanoidの設定画面において、以下の画像のように__Reset__を押します。親指のボーンが赤くなり、Tポーズではないという警告が出ますが、そのまま__Done__を押してHumanoid化を行います。
+Humanoidの設定画面において、以下の画像のように**Reset** を押します。親指のボーンが赤くなり、Tポーズではないという警告が出ますが、そのまま**Done** を押してHumanoid化を行います。
 
 <img src="Image/Humanoid/B.png" width="500">
 
@@ -481,23 +481,23 @@ Humanoidの設定画面において、以下の画像のように__Reset__を押
 
 本製品には通常版マテリアルと簡易版マテリアルの2種を用意しています。通常版には1影がテクスチャとして設定していますが、簡易版にはメインカラー1枚のみを使用しています。
 
-__通常版マテリアル__：想定しているシェーディング、色改変には2枚のテクスチャを作成する必要あり
+**通常版マテリアル** ：想定しているシェーディング、色改変には2枚のテクスチャを作成する必要あり
 
-__簡易版マテリアル__：メインテクスチャ1枚のみのマテリアル、色改変には1枚のテクスチャのみを用意する。色改変が容易
+**簡易版マテリアル** ：メインテクスチャ1枚のみのマテリアル、色改変には1枚のテクスチャのみを用意する。色改変が容易
 
 
 
 #### 通常版マテリアル
 
-- __LatteMain__：素体、頭、衣装、下着
-- __LatteHair__：髪の毛
-- __LatteOpacity__：透過オブジェクト
+- **LatteMain** ：素体、頭、衣装、下着
+- **LatteHair** ：髪の毛
+- **LatteOpacity** ：透過オブジェクト
 
 
 
 貫通を防ぐため、素体および衣装の一部をCutOffを用いて不可視化しています。
 
-衣装を消すなどの改変を行う際には__LatteMain__内の__ClippingMask__のテクスチャを消すことで表示されるようになります。
+衣装を消すなどの改変を行う際には**LatteMain** 内の**ClippingMask** のテクスチャを消すことで表示されるようになります。
 
 <img src="Image/Texture.png" width="500">
 
@@ -505,22 +505,22 @@ __簡易版マテリアル__：メインテクスチャ1枚のみのマテリア
 
 #### 簡易版マテリアル
 
-- __LatteCos_Simple__：衣装、下着
-- __LatteSkin_Simple__：素体、頭
-- __LatteHair_Simple__：髪の毛
-- __LatteOpacity_Simple__：透過オブジェクト
+- **LatteCos_Simple** ：衣装、下着
+- **LatteSkin_Simple** ：素体、頭
+- **LatteHair_Simple** ：髪の毛
+- **LatteOpacity_Simple** ：透過オブジェクト
 
 
 
 簡易版マテリアルも同様に、貫通を防ぐため、素体および衣装の一部をCutOffを用いて不可視化しています。
 
-衣装を消すなどの改変を行う際には__LatteCos_Simple__および__LatteSkin_Simple__内の__ClippingMask__のテクスチャを消すことで表示されるようになります。
+衣装を消すなどの改変を行う際には**LatteCos_Simple** および**LatteSkin_Simple** 内の**ClippingMask** のテクスチャを消すことで表示されるようになります。
 
 
 
 #### 漫符オブジェクト用
 
-- __Manpu__
+- **Manpu** 
 
 
 
@@ -538,10 +538,10 @@ UCL2.0 [http://unity-chan.com/contents/guideline/](http://unity-chan.com/content
 
 本製品にはpsdファイルとして以下のテクスチャのデータを同梱しています。
 
-- __Latte_Tex_Simple.psd__：部位ごとにレイヤーをまとめているpsd、マスクなし、簡単な色改変向け
-- __Latte_Tex_Raw.psd__：1レイヤー1色レベルに分けられているpsd、マスク付き、詳細な改変用
+- **Latte_Tex_Simple.psd** ：部位ごとにレイヤーをまとめているpsd、マスクなし、簡単な色改変向け
+- **Latte_Tex_Raw.psd** ：1レイヤー1色レベルに分けられているpsd、マスク付き、詳細な改変用
 
-- __Manpu.psd__：漫符オブジェクト用のpsd
+- **Manpu.psd** ：漫符オブジェクト用のpsd
 
 
 
