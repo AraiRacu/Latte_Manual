@@ -181,7 +181,7 @@ Latte_v1_00.zip/
 
 <br>
 
-1. 変更するシェイプキーのバックアップをCtrl+Dで取ります。プレハブで使用しているシェイプキーは**Latte/Animation/Interference/ShapeKey** に入っています。バックアップしたアニメーションファイルの名前を__\~ \_Backup__ など適当な名前に変えておくとわかりやすいです。
+1. 変更するシェイプキーのバックアップをCtrl+Dで取ります。プレハブで使用しているシェイプキーは**Latte/Animation/Interference/ShapeKey** に入っています。バックアップしたアニメーションファイルの名前を**_Backup** など適当な名前に変えておくとわかりやすいです。
 
    <img src="Image/IntroAnim/A.png" width="300">
 
