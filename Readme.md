@@ -6,7 +6,7 @@
 
 ## 利用規約
 
-https://github.com/AraiRacu/Licenceを参照してください。
+[https://github.com/AraiRacu/Licence](https://github.com/AraiRacu/Licence) を参照してください。
 
 アライラク(以下「制作者」)の制作した素材(以下「本件素材」)を購入・利用する全てのお客様(以下「利用者」)は、上記URLに記載する利用規約(以下「本規約」)に同意したものといたします。
 
@@ -20,9 +20,9 @@ https://github.com/AraiRacu/Licenceを参照してください。
 <br>
 
 - [配布物内容](#配布物内容)
-- [アップロードまでの流れ(B)](#アップロードまでの流れ(B))
+- [アップロードまでの流れ\(B\)](#アップロードまでの流れ\(B\))
 - [シェイプキー](#シェイプキー)
-  - [アニメーションオーバーライドの設定(B)](#アニメーションオーバーライドの設定(B))
+  - [アニメーションオーバーライドの設定\(B\)](#アニメーションオーバーライドの設定\(B\))
   - [シェイプキー干渉対策](#シェイプキー干渉対策)
   - [Idelアニメーションについて](#Idelアニメーションについて)
   - [プリセット表情](#プリセット表情)
@@ -36,12 +36,12 @@ https://github.com/AraiRacu/Licenceを参照してください。
   - [DynamicBoneの設置場所](#DynamicBoneの設置場所)
   - [ねじり打ち消し機構スカート](#ねじり打ち消し機構スカート)
 - [同梱3Dオブジェクト](#同梱3Dオブジェクト)
-  - [Latte.fbx](#Latte.fbx)
+  - [Latte\.fbx](#Latte\.fbx)
     - [Humanoid化](#Humanoid化)
-  - [Manpu.fbx](#Manpu.fbx)
+  - [Manpu\.fbx](#Manpu\.fbx)
 - [マテリアルおよびテクスチャ](#マテリアルおよびテクスチャ)
   - [マテリアル](#マテリアル)
-  - [UTS2.0](#UTS2.0)
+  - [UTS2\.0](#UTS2\.0)
   - [テクスチャ](#テクスチャ)
 - [その他](#その他)
 
@@ -89,7 +89,7 @@ Latte_v1_00.zip/
 
 参考：VRChat 購入したアバターのアップロード方法 - テトラログ
 
-​			[https://tetoralog.com/vrc/vrc-avatar-upload.html](https://tetoralog.com/vrc/vrc-avatar-upload.html)
+　　　[https://tetoralog.com/vrc/vrc-avatar-upload.html](https://tetoralog.com/vrc/vrc-avatar-upload.html)
 
 <br>
 
@@ -147,7 +147,7 @@ Latte_v1_00.zip/
 
 #### 4. Sceneにアバターを配置します
 
-1. **Project** タブの**Latte/Prefab** からアップロードするプレハブを**Hierarchy** にD&Dします。プレハブの種類については[ここ](#同梱プレハブ)を参照してください。
+1. **Project** タブの**Latte/Prefab** からアップロードするプレハブを**Hierarchy** にD&Dします。プレハブの種類については[ここ](#同梱プレハブ) を参照してください。
 
    <img src="Image/Intro/G.png" width="700">
 
@@ -470,7 +470,7 @@ Humanoidの設定画面において、以下の画像のように**Reset** を�
 
 <br>
 
-漫符オブジェクトの詳細は[ここ](##漫符オブジェクト)を参照してください。
+漫符オブジェクトの詳細は[ここ](#漫符オブジェクト) を参照してください。
 
 <br>
 
@@ -550,7 +550,7 @@ UCL2.0 [http://unity-chan.com/contents/guideline/](http://unity-chan.com/content
 
 その他、疑問やバグなどがあれば以下の連絡先に連絡をお願いします。 
 
-アライラク (Twitter : @AraiRacu) 
+アライラク (Twitter : [@AraiRacu](https://twitter.com/AraiRacu)) 
 
 <br>
 
