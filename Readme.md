@@ -19,39 +19,65 @@ https://github.com/AraiRacu/Licenceを参照してください。
 
 
 
-[toc]
+- [配布物内容](#配布物内容)
+- [アップロードまでの流れ(B)](#アップロードまでの流れ(B))
+- [シェイプキー](#シェイプキー)
+  - [アニメーションオーバーライドの設定(B)](#アニメーションオーバーライドの設定(B))
+  - [シェイプキー干渉対策](#シェイプキー干渉対策)
+  - [Idelアニメーションについて](#Idelアニメーションについて)
+  - [プリセット表情](#プリセット表情)
+  - [漫符オブジェクト](#漫符オブジェクト)
+    - [導入の方法](#導入の方法)
+    - [漫符アニメーションの設定方法](#漫符アニメーションの設定方法)
+    - [漫符オブジェクト一覧](#漫符オブジェクト一覧)
+- [同梱プレハブ](#同梱プレハブ)
+- [VRM](#VRM)
+- [Dynamic Bone](#Dynamic Bone)
+  - [Dynamic Boneの設置場所](#Dynamic Boneの設置場所)
+  - [ねじり打ち消し機構スカート](#ねじり打ち消し機構スカート)
+- [同梱3Dオブジェクト](#同梱3Dオブジェクト)
+  - [Latte.fbx](#Latte.fbx)
+    - [Humanoid化](#Humanoid化)
+  - [Manpu.fbx](#Manpu.fbx)
+- [マテリアルおよびテクスチャ](#マテリアルおよびテクスチャ)
+  - [マテリアル](#マテリアル)
+  - [UTS2.0](#UTS2.0)
+  - [テクスチャ](#テクスチャ)
+- [その他](#その他)
+
+
 
 # 配布物内容
 
 Latte_v1_00.zip/
 
-​		┝Model/
+　　┝Model/
 
-​		│	┝Latte.fbx
+　　│	┝Latte.fbx
 
-​		│	┝Manpu.fbx
+　　│	┝Manpu.fbx
 
-​		│	└Tex/
+　　│	└Tex/
 
-​		│			┝Latte_Tex_Simple.psd
+　　│			┝Latte_Tex_Simple.psd
 
-​		│			┝Latte_Tex_Raw.psd
+　　│			┝Latte_Tex_Raw.psd
 
-​		│			└Manpu.psd
+　　│			└Manpu.psd
 
-​		┝VRM/
+　　┝VRM/
 
 ​		│	┝LatteVRM.vrm
 
 ​		│	└VRMSpring.json
 
-​		┝Latte.unitypackage
+　　┝Latte.unitypackage
 
-​		┝readme_jp.txt
+　　┝readme_jp.txt
 
-​		┝readme_en.txt
+　　┝readme_en.txt
 
-​		┝Licence_GitHub
+　　┝Licence_GitHub
 
 ​		└Latte_Manual
 
@@ -386,11 +412,11 @@ Latte_v1_00.zip/
 
 参考：【VRChat向け】ねじり打ち消し機構の解説書 - ヒヨ家の交易所 
 
-​               [https://booth.pm/ja/items/1819470](https://booth.pm/ja/items/1819470 )
+　　　　[https://booth.pm/ja/items/1819470](https://booth.pm/ja/items/1819470 )
 
 　　　SkirtSupporter説明書 - ほけ
 
-​               [https://sites.google.com/view/skirtsup](https://sites.google.com/view/skirtsup)
+　　　　[https://sites.google.com/view/skirtsup](https://sites.google.com/view/skirtsup)
 
 
 
