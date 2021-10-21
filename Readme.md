@@ -1,6 +1,6 @@
 # Latte仕様詳細および導入マニュアル
 
-2020/04/10　アライラク
+2021/10/22　アライラク
 
 <br>
 
@@ -12,20 +12,22 @@
 
 <br>
 
+# はじめに
 
-# 目次
+VRChat公式から、Avatar2.0の新規プロジェクト立ち上げが非推奨になりました。それに伴い、Latte-ver1.20より、Avatart2.0の対応を終了し、Avatar3.0へ一本化を行います。
 
-(B)のマークが付いているものはUnityのアップロードが初めての方向けです。
+本マニュアルの説明もAvatar3.0向けに対応を行いました。
 
 <br>
 
 
+# 目次
 
 - [配布物内容](#配布物内容)
-- [アップロードまでの流れ\(B\)](#アップロードまでの流れB)
+- [アップロードまでの流れ](#アップロードまでの流れ)
 - [シェイプキー](#シェイプキー)
-  - [アニメーションオーバーライドの設定\(B\)](#アニメーションオーバーライドの設定B)
-  - [シェイプキー干渉対策](#シェイプキー干渉対策)
+  - [Avatar3.0でのシェイプキーの入れ替え](#Avatar3.0でのシェイプキーの入れ替え)
+  - [LisSyncの干渉防止について](#LisSyncの干渉防止について)
   - [Idelアニメーションについて](#Idelアニメーションについて)
   - [プリセット表情](#プリセット表情)
   - [漫符オブジェクト](#漫符オブジェクト)
@@ -51,7 +53,7 @@
 
 # 配布物内容
 
-Latte_v1_00.zip/
+Latte_v1_20.zip/
 
 　　┝Model/
 
@@ -85,28 +87,23 @@ Latte_v1_00.zip/
 
 <br>
 
-# アップロードまでの流れ\(B\)
+# アップロードまでの流れ
 
-※Unity2018.4.20fでの方法です。
+※Unity2019.4.31fでの方法です。
 
-参考：VRChat 購入したアバターのアップロード方法 - テトラログ
+参考：【最新版】初心者向け：VRChatのアバターアップロード方法 - ASTONESS
 
-　　　[https://tetoralog.com/vrc/vrc-avatar-upload.html](https://tetoralog.com/vrc/vrc-avatar-upload.html)
+　　　[https://astoness.com/blogs/times/how-to-upload-avatar-vrchat](https://astoness.com/blogs/times/how-to-upload-avatar-vrchat)
 
 <br>
 
 前提条件
 
 - VRChatのアカウント取得
-
 - Unityのアカウント取得
-
-- Unity2018.4.20fのインストール
-
-- 最新版のVRCSDK2の入手・本製品のダウンロードおよび解凍
-
-  ※アバターアップロードの際、VRCSDK3は使用しないでください。
-
+- Unity2019.4.31fのインストール
+- 最新版のVRCSDK3-Avatarsの入手
+- 本製品のダウンロードおよび解凍
 - VRChatトラストシステムによるアバターアップロードの解禁
 
 <br>
@@ -114,6 +111,8 @@ Latte_v1_00.zip/
 #### 1. Unityを起動し、新規プロジェクトを作成します
 
    ※Unityアカウントでのログインが必要な場合があります。
+
+   ※Unity Hubを使用している場合、手順が異なります。
 
    1. Unityを起動し、プロジェクトを作成します。**Project name** に適当なプロジェクト名を入力し、**Template** を**3D** にします。入力後、**Create project** を押します。
 
@@ -129,7 +128,7 @@ Latte_v1_00.zip/
 
 #### 2. Unityにパッケージをインポートします
 
-1. **VRCSDK2** をインポートします。エクスプローラーからUnityの**Project** タブの**Asset** フォルダにD&Dします。その後、Import画面が開くので、**Import** 押してしばらくするとインポートされます。
+1. **VRCSDK3-Avatars** をインポートします。エクスプローラーからUnityの**Project** タブの**Asset** フォルダにD&Dします。その後、Import画面が開くので、**Import** 押してしばらくするとインポートされます。
 
    <img src="Image/Intro/C.png" width="800">
 
@@ -137,7 +136,7 @@ Latte_v1_00.zip/
 
    <img src="Image/Intro/D.png" width="300">
 
-3. 本製品の**Latte.unitypackage** をインポートします。操作は1.のVRCSDKをインポートとしたときと同様です。ユニティちゃんトゥーンシェーダー2.0.7.5は本パッケージに同梱しているので追加でインポートする必要はありません。
+3. 本製品の**Latte.unitypackage** をインポートします。操作は1.のVRCSDKをインポートとしたときと同様です。ユニティちゃんトゥーンシェーダー2.0.8は本パッケージに同梱しているので追加でインポートする必要はありません。
 
 #### 3.VRCSDKにログインします
 
@@ -147,15 +146,17 @@ Latte_v1_00.zip/
 
    <img src="Image/Intro/F.png" width="400">
 
-#### 4. Sceneにアバターを配置します
+#### 4. Sceneを開きます
 
-1. **Project** タブの**Latte/Prefab** からアップロードするプレハブを**Hierarchy** にD&Dします。プレハブの種類については[ここ](#同梱プレハブ) を参照してください。
+1. **Project** タブの**Asset/Latte** から**Latte.unity**をダブルクリックで開いてください。**Hierarchy** にセットアップ済みのアバターのプレハブが用意しています。プレハブの種類については[ここ](#同梱プレハブ) を参照してください。
 
    <img src="Image/Intro/G.png" width="700">
 
 #### 5.アバターをVRChatにアップロードします
 
-1. シーンを保存します。ここで**Ctrl + S** で適当なシーン名で保存します。デフォルトでは**Asset/Scene** に**SampleScene** として置かれます。
+1. シーンを保存します。ここで**Ctrl+Shift+ S** で適当なシーン名で保存します。
+
+   ※ここで別途、新規シーンで保存することをおすすめします。(改めてunitypackageをインポートするとLatte.untiyが上書きされることがあります。)
 
 2. ログインしたVRChatコントロールパネル内の**Builder** の右下の**Build & Publish** を押します。
 
@@ -175,93 +176,65 @@ Latte_v1_00.zip/
 
 # シェイプキー
 
-## アニメーションオーバーライドの設定\(B\)
+## Avatar3.0でのシェイプキーの入れ替え
 
-デフォルトの表情から付属している追加の表情へ変更する場合、以下の手順で可能です。
-
-<br>
-
-1. 変更するシェイプキーのバックアップをCtrl+Dで取ります。プレハブで使用しているシェイプキーは**Latte/Animation/Interference/ShapeKey** に入っています。バックアップしたアニメーションファイルの名前を**シェイプキー名_Backup** など適当な名前に変えておくとわかりやすいです。
-
-   <img src="Image/IntroAnim/A.png" width="300">
-
-2. 変えたい表情のアニメーションファイルを**Latte/Animation/Interference/Add**  内から選択します。(指の表情は**Latte/Animation/Common** にあります)
-
-3. 2.でアニメーションファイルを選択した状態で、Animationタブを開き、つけたい表情のキーフレームを表示します。キーフレームをCtrl+Aですべて選択し、Ctrl+Cでコピーします。
-
-   <img src="Image/IntroAnim/B.png" width="700">
-
-4. 1.で選択した変更するシェイプキーを選択し、AnimationタブでCtrl+Vでペーストします。
-
-   <img src="Image/IntroAnim/C.png" width="700">
-
-5. 表情を変更したいアバターのアニメーションオーバーライドを表示します。(アバターについているAvatar Descriptor内、**Custom Standing/Sitting Anims** にアタッチされているものです。)
-
-   <img src="Image/IntroAnim/D.png" width="700">
-
-6. 作成したアニメーションを該当の場所にアタッチします。
-
-   <img src="Image/IntroAnim/E.png" width="500">
-
-7. この状態でアップロードすると実装されます。
+Avatar3.0で表情を変更する手順を説明します。
 
 <br>
 
-## シェイプキー干渉対策
+この章では、左右の手に同じ表情を割り当てることを行います。
 
-アニメーションオーバーライドの表情とリップシンクが干渉し、表情が破綻することを防ぐために、表情を表示中はリップシンクを行わない仕組みをureishi様([@aivrc](https://twitter.com/aivrc))の方式を導入しました。
+1.**Animatorウィンドウ**を表示します。
 
-<br>
+2.**Projectウィンドウ**の**Latte/Animator**の中からAnimatorファイル、**Latte_AvatarV3HandsLayer_FX**を選択し、**Animatorウィンドウ**にAnimatorの内容を表示します。
 
-このため、頭部のメッシュの親子構造がfbxファイルの状態から変更しています。これに伴い、表情アニメーションのパスも一般的なものと異なり、**LipSync/Body** となっています。
+<img src="Image/IntroAnim/A.png" width="700">
 
-<br>
+3.AnimatorウィンドウのLayersタブを選択し、その下の**Left Hand**を選択し、左手のハンドジェスチャーのレイヤーを表示してください。
 
-以上から、表情アニメーションは2種類のものを用意しています。
+<img src="Image/IntroAnim/B.png" width="500">
 
-**Latte/Animation/Normal** ：シェイプキー干渉対策をしていない一般的な3Dモデルの直下に頭部メッシュがある場合のアニメーション群。シェイプキー干渉対策をしない場合に利用してください。
+4.**Left Hand**の中にあるFist～ThumbsupのStateの中で、変更したい手の表情を選択します。この状態でInspectorウィンドウに移動するとそのStateの内容が表示されています。
 
-**Latte/Animation/Interference** ：シェイプキー干渉対策用に作成されたアニメーション群。プレハブ等にはここのアニメーションを使用しています。
+<img src="Image/IntroAnim/C.png" width="700">
 
-<br>
+5.Projectウィンドウから**Stre/Animation/AddExpression**内の変更したいアニメーションをInspector内の**Motion**にアタッチします。
 
-### シェイプキー干渉対策の実装方法
+<img src="Image/IntroAnim/D.png" width="700">
 
-1. 3Dオブジェクトの親子関係を以下の画像のようにします。3Dモデルの直下に空のゲームオブジェクトを作成し、リネームをします(画像ではLipSync)。作成したからのゲームオブジェクト、LipSyncをBody(頭部メッシュ)の親にします。BodyはCtrl+Dで複製し、非アクティブにして3Dモデルの直下に置きます。
+6.次に、右手の設定をします。同じAnimatorでLayersタブに並んている**Right Hand**を選択してください。
 
-   <img src="Image/InterAnim/A.png" width="1000">
+<img src="Image/IntroAnim/E.png" width="500">
 
-2. LipSyncに**Animatior** コンポーネントを追加します。このコンポーネントは非アクティブにしておきます。**Latte/Animation/Interference/Animator** 内のアニメーションコントローラの**LipSync** をAnimatorにアタッチします。
-
-   <img src="Image/InterAnim/B.png" width="1000">
-
-   <br>
-
-### 干渉対策用の表情アニメーションの作成
-
-3. Bodyのシェイプキーのパスが**LipSync/Body** となった以外は通常通りに設定します。
-
-2. 表情を設定し終わったアニメーションに**Latte/Animation/Interference** 内の**LipSyncAnimator** 内の2フレーム分のアニメーションをコピー＆ペーストします。
-
-   <img src="Image/InterAnim/C.png" width="700">
-
-   <img src="Image/InterAnim/D.png" width="700">
-
-3. このアニメーションファイルを通常通りアニメーションオーバーライドにアタッチします。
+7.Left Handと同様に変更したい手の表情のStateを選択し、Inspector内のMotionに変更するAnimationにアタッチします。
 
 <br>
 
-参考：表情・リップシンク・まばたきの干渉対策 [VRChat] - Package Shop @aivrc
+## LisSyncの干渉防止について
 
-​				[https://booth.pm/ja/items/1532584](https://booth.pm/ja/items/1532584)
+Avatar3.0の機能で、ハンドジェスチャーで表情を変更しているときにリップシンクを行わない設定ができます。
+
+<br>
+
+**Projectウィンドウ**の**Latte/Animator**の中からAnimatorファイル、**Latte_AvatarV3HandsLayer_FX**でのRight Hand及びLeft Handの表情がアタッチされているStateに**VRC Animator Tracking Control**が刺してあり、その中の**Mouth&Jaw**の**Animation**のチェックをつけることで干渉を防止しています。
+
+<br>
+
+参照：[VRChat] Avatars3.0で表情切り替え時のまばたき干渉防止を実装する - がとーしょこらの技術録
+
+[https://gatosyocora.hatenablog.com/entry/2020/08/09/094945](https://gatosyocora.hatenablog.com/entry/2020/08/09/094945)
+
+<img src="Image/IntroAnim/F.png" width="700">
 
 <br>
 
 ## Idelアニメーションについて
 
-本製品は立ち状態、座り状態時に設定した立ち姿、座り姿になるようにIdelアニメーションを付属しています。
+本製品は立ち状態、座り状態時に図のような立ち姿、座り姿になるようにIdelアニメーションを付属しています。
 
-立ち状態、座り状態にそれぞれ、アニメーションオーバーライドが必要なことから、2種のアニメーションオーバーライドが**Latte/Animation/Interference/Animator** にあります。それぞれ**Idel** にアタッチされているアニメーションが異なっている以外は同じです。(Latte/Animation/Normal/Animatorについても同様です。)
+立ち状態、座り状態はそれぞれ、**Latte/Animator**内の**Latte_AvatarV3LocomotionLayer**及び**Latte_Avatar3_Sitting**で用いています。
+
+アニメーション自体は**Latte/Animation/Utility**内に入っています。
 
 <img src="Image/Idel.png" width="400">
 
@@ -289,9 +262,9 @@ Latte_v1_00.zip/
 
 本製品には追加パーツとして漫符をまとめた3Dデータを同梱しています。
 
-同梱プレハブにはすでに実装していますが、別のモデルデータであるため、新規で導入する際などに導入する際の手順を設定します。
+同梱プレハブにはすでに実装していますが、新規で導入する際の手順を設定します。
 
-魂についてはシェイプキーではなくボーンの拡大縮小、移動によって制御しているため、注意が必要です。
+魂はシェイプキーではなくボーンの拡大縮小、移動によって制御しているため、注意が必要です。
 
 ### 導入の方法
 
@@ -299,31 +272,35 @@ Latte_v1_00.zip/
 
    <img src="Image/ManpuIntro/A.png" width="700">
 
-2. このプレハブに**Latte/Animation/Common** 内**GhostOn** のアニメーションを直接アタッチしてください。この状態で再生すると魂が表示されている状態になります。(Animatorが自動生成されます)
+2. このプレハブに**Latte/Animation/Utility**内**GhostOn** のアニメーションを直接アタッチしてください。この状態で再生すると魂が表示されている状態になります。(Animatorが自動生成されます)
 
    <img src="Image/ManpuIntro/B.png" width="500">
 
-3. 魂の出始めをアバターの口元に合わせるように、プレハブのTransformを調整します。
+3. HierarchyタブでManpuを選択している状態で、Animationタブを開き、Previewをクリックします。すると、魂が表示されます。
 
    <img src="Image/ManpuIntro/C.png" width="800">
 
-4. 調整後、プレハブにアタッチしているAnimatorを削除します。(2で生成されたAnimatorは削除しても問題ありません)
+4. 魂の出始めをアバターの口元に合わせるように、プレハブのTransformを調整します。
 
    <img src="Image/ManpuIntro/D.png" width="700">
 
-5. プレハブをアバターのHeadの子にします。
+5. 調整後、プレハブにアタッチしているAnimatorのコンポーネントを削除します。(2で生成されたAnimatorも削除しても問題ありません)
 
-   <img src="Image/ManpuIntro/E.png" width="600">
+   <img src="Image/ManpuIntro/E.png" width="700">
 
-6. 以上で、漫符の導入は完了します。
+6. プレハブをアバターのHeadの子にします。
+
+   <img src="Image/ManpuIntro/F.png" width="600">
+
+7. 以上で、漫符の導入は完了します。
 
    <br>
 
 ### 漫符アニメーションの設定方法
 
-- **Latte/Animation/Common** 内にある**Manpu** に漫符シェイプキーのパスも同梱しているので、これをコピー＆ペーストで追加して設定してください。**Manpu** には魂を非表示するアニメーションが入っています。
+- **Latte/Animation/Utility**内にある**Manpu**に漫符シェイプキーのパスも同梱しているので、これをコピー＆ペーストで追加して設定してください。**Manpu**には魂を非表示するアニメーションが入っています。
 - 魂の表示するアニメーションは同フォルダ内**GhostOn_InPath** に含まれているため、コピー＆ペーストするだけで実装できます。
-- **Latte/Animation/Interference** or **Normal/Utility**  内の**ShapeKeyAll** には漫符オブジェクトを含めたすべてのシェイプキーがあります。
+- **Latte/Animation/Utility**内の**ShapeKeyAll** には漫符オブジェクトを含めたすべてのシェイプキーがあります。
 
 <br>
 
@@ -528,7 +505,7 @@ Humanoidの設定画面において、以下の画像のように**Reset** を�
 
 ## UTS2\.0
 
-ユニティ・テクノロジーズ・ジャパン合同会社のユニティちゃんトゥーンシェーダー 2.0 (UTS2.0) Ver.2.0.7.5 を使用しています。UTS2.0.7.5 は本UnityPackageに同梱しています。 
+ユニティ・テクノロジーズ・ジャパン合同会社のユニティちゃんトゥーンシェーダー 2.0 (UTS2.0) Ver.2.0.8 を使用しています。UTS2.0.8 は本UnityPackageに同梱しています。 
 
 「ユニティちゃんトゥーンシェーダー 2.0」は、UCL2.0（ユニティちゃんライセンス 2.0）で提供されます。 ユニティちゃんライセンスについては、以下を参照してください。 
 
@@ -559,3 +536,5 @@ UCL2.0 [http://unity-chan.com/contents/guideline/](http://unity-chan.com/content
 # リリースノート
 
 2020/04/10 初稿
+
+2021/10/22 Avatar3.0用に改訂
